@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/public/pokeball-pokemon-svgrepo-com.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Buscar Pokemons</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pokédex</h1>
+
+      <div class="controls">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar pokemon por nombre..."
+        />
+        <button id="buscarNombreBtn">Buscar por nombre</button>
+      </div>
+
+      <div class="controls">
+        <label for="tipoSelect">Buscar por tipo:</label>
+        <select id="tipoSelect">
+          <option value="fire">Fuego</option>
+          <option value="water">Agua</option>
+          <option value="grass">Planta</option>
+          <option value="electric">Eléctrico</option>
+          <option value="psychic">Psíquico</option>
+          <option value="rock">Roca</option>
+          <option value="ground">Tierra</option>
+          <option value="ice">Hielo</option>
+          <option value="ghost">Fantasma</option>
+          <option value="dragon">Dragón</option>
+          <option value="normal">Normal</option>
+          <option value="fighting">Lucha</option>
+          <option value="bug">Bicho</option>
+          <option value="poison">Veneno</option>
+          <option value="flying">Volador</option>
+          <option value="steel">Metal</option>
+          <option value="dark">Oscuro</option>
+          <option value="fairy">Hada</option>
+        </select>
+        <button id="buscarTipoBtn">Buscar</button>
+      </div>
+
+      <div class="controls">
+        <button id="ordenAscBtn">Ordenar por peso ascendiente</button>
+        <button id="ordenDescBtn">Ordenar por peso descendiente</button>
+      </div>
+
+      <div id="resultado"></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
